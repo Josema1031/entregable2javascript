@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARVEL</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkE5CN0dHatGlAOaVtl6OtDtuPRpLutcFB0w&s" alt="">
+       
+        <nav>
+            <ul class="menu">
+                <li><a href="producto.html">Productos</a>
+                    <ul class="submenu">
+                        <li><a href="#">Linea Smash</a></li>
+                        <li><a href="#">Linea Veggie</a></li>
+                        <li><a href="">Combo para dos</a></li>
+                        <li><a href="">Para compartir</a></li>
+                        <li><a href="">Papas</a></li>
+                        <li><a href="">Nuestras Burger</a></li>
+                    </ul>
+                </li>
+                <li><a href="oferta.html">Ofertas</a>
+                <ul class="submenu">
+                    <li><a href="#">Marvel del Dia</a></li>
+                </ul>
+                <li><a href="#">Lanzamiento</a></li>
+                <li><a href="#cart-items">Carrito</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <section class="products">
+            <div class="card">
+                <p class="descuento">PRODUCTO</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlJ9LvEPt9SzxmGvuXgCTUctB7mIGDgY6sfmA74JO0T0utbEutbv0x7nwcqHN4E7MtI9k&usqp=CAU" alt="Producto 1">
+                <h3>NATASHA</h3>
+                <p>Medallon Marvel,extra cheddar,aderezo a eleccion</p>
+                <p class="precio">Precio: $4500</p>
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad1" name="cantidad1" min="1" value="1">
+                <button class="add-to-cart" data-producto-id="1">Añadir al carrito</button>
+            </div>
+            <div class="card">
+                <p class="descuento">PRODUCTO</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR47Lrey6gtw6kxeBK-ymiVgAmfwYxMS_dl_Q&s" alt="Producto 1">
+                <h3>PETER PARKER</h3>
+                <p>Medallon Marvel, Cheddar,Cebolla,Ketchup</p>
+                <p class="precio">Precio: $4600</p>
+                <label for="cantidad2">Cantidad:</label>
+                <input type="number" id="cantidad2" name="cantidad2" min="1" value="1">
+                <button class="add-to-cart" data-producto-id="2">Añadir al carrito</button>
+            </div>
+                        
+            <div class="card">
+                <p class="descuento">PRODUCTO</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-JmXltfl8Z7vkIr7_crBbtYb5KKukTkIhP5mhpkiRSFg2XNVgIdq5bWioFSBcv_cEoBs&usqp=CAU" alt="Producto 2">
+                <h3>CAPITAN AMERICA</h3>
+                <p>Medallon Marvel, Muzzarella, jamon, tomate, huevo frito, Lechuga, mayonesa</p>
+                <p class="precio">Precio: $5400</p>
+                <label for="cantidad8">Cantidad:</label>
+                <input type="number" id="cantidad8" name="cantidad8" min="1" value="1">
+                <button class="add-to-cart" data-producto-id="8">Añadir al carrito</button>
+            </div>
+            
+        </section>
+    </main>
+    
+
+    <section class="cart fixed-cart">   
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: $0</p>
+        <button id="hacercompra">Comprar</button>
+        <button id="cancel">Cancelar la compra</button>
+        <button id="modify">Modificar la compra</button>
+        <button id="reclamo-pedido">Reclamo</button>
+      </section>
+
+    <a href="https://wa.me/+5493415326060" class="whatsapp-icon" target="_blank">
+        <img src="imagenes/descarga icono whatsap.png" alt="WhatsApp">
+    </a>
+    <footer>
+        
+        <ul>
+            <li>Ubicación: Av. San Martin 111, Villa Gdor Galvez (Santa Fe)<a href=""></a></li>
+            <li>📞 Teléfono: <a href="tel:3415326060">3415326060</a></li>
+            <li>🌐 Sitio Web: <a href="" target="_blank">--</a></li>
+            <li>📱 Redes Sociales: Síguenos en
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>,
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>,
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            </li>
+        </ul>
+        <p class="copy">&copy; MARVEL-2024</p>
+    </footer>
+
+    
+
+    <script src="script.js"></script>
+   
+
+    
+</body>
+</html>
