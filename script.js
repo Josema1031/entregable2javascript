@@ -4,26 +4,51 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateCart() {
         const cartContainer = document.getElementById('cart-items');
         const cartTotal = document.getElementById('cart-total');
-        cartContainer.innerHTML = '';
-        let total = 0;
+        if (cartContainer && cartTotal) {
+            cartContainer.innerHTML = '';
+            let total = 0;
 
-        for (const productoId in cart) {
-            if (cart.hasOwnProperty(productoId)) {
-                const item = cart[productoId];
-                const listItem = document.createElement('li');
-                listItem.innerHTML = `
-                    ${item.name} - Cantidad: 
-                    <input type="number" class="cantidad-input" data-producto-id="${productoId}" value="${item.cantidad}" min="1">
-                    - Precio: $${item.precio * item.cantidad}
-                    <button class="remove-from-cart" data-producto-id="${productoId}">Eliminar</button>
-                `;
-                cartContainer.appendChild(listItem);
-                total += item.precio * item.cantidad;
+            for (const productoId in cart) {
+                if (cart.hasOwnProperty(productoId)) {
+                    const item = cart[productoId];
+                    const listItem = document.createElement('li');
+                    listItem.innerHTML = `
+                        ${item.name} - Cantidad: 
+                        <input type="number" class="cantidad-input" data-producto-id="${productoId}" value="${item.cantidad}" min="1">
+                        - Precio: $${item.precio * item.cantidad}
+                        <button class="remove-from-cart" data-producto-id="${productoId}">Eliminar</button>
+                    `;
+                    cartContainer.appendChild(listItem);
+                    total += item.precio * item.cantidad;
+                }
             }
-        }
 
-        cartTotal.textContent = `Total: $${total}`;
-        localStorage.setItem('cart', JSON.stringify(cart));
+            cartTotal.textContent = `Total: $${total}`;
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            // Añadir event listeners para los campos de cantidad
+            const cantidadInputs = document.querySelectorAll('.cantidad-input');
+            cantidadInputs.forEach(input => {
+                input.addEventListener('input', (event) => {
+                    const productoId = event.target.getAttribute('data-producto-id');
+                    const nuevaCantidad = parseInt(event.target.value);
+                    if (nuevaCantidad > 0) {
+                        cart[productoId].cantidad = nuevaCantidad;
+                        updateCart(); // Actualizar el carrito nuevamente
+                    }
+                });
+            });
+
+            // Añadir event listeners para los botones de eliminar
+            const removeButtons = document.querySelectorAll('.remove-from-cart');
+            removeButtons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    const productoId = event.target.getAttribute('data-producto-id');
+                    delete cart[productoId];
+                    updateCart(); // Actualizar el carrito nuevamente
+                });
+            });
+        }
     }
 
     document.querySelectorAll('.add-to-cart').forEach(button => {
@@ -42,9 +67,15 @@ document.addEventListener('DOMContentLoaded', function() {
             cart[productoId].cantidad += cantidad;
 
             alert(`Producto añadido al carrito. Cantidad total: ${cart[productoId].cantidad}`);
+            localStorage.setItem('cart', JSON.stringify(cart));
             updateCart();
         });
     });
+
+    // Solo actualiza el carrito si estamos en la página del carrito
+    if (document.getElementById('cart-items')) {
+        updateCart();
+    }
 
     //BOTON PARA ENVIAR MSJ DE TEXTO VIA WHATSAPP PARA HACER EL PEDIDO DE LA BURGER
     if (document.getElementById('hacercompra')) {
@@ -121,10 +152,37 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Obtener los elementos del DOM
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+
+// Abrir la ventana modal automáticamente al cargar la página
+window.onload = function() {
+    modal.style.display = "block";
+}
+
+// Cuando el usuario hace clic en la X, cierra la ventana modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Cuando el usuario hace clic fuera de la ventana modal, cierra la ventana modal
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
+
+
     
 
     updateCart();
 });
+
+
 
 
 

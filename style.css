@@ -1,6 +1,21 @@
+body {
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* TITULOS H1*/
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
 /*MENU Y SUBMENU DE MARVEL */
 header {
-    background-color:#EDBF24;;
+    background-color:#EDBF24;
     color: #1C1C1A;
    
     border-bottom: 2px solid white;
@@ -10,7 +25,7 @@ header img {
     display: flex;
     position:sticky;
     margin: auto;
-    width: 30%;
+    
    margin-bottom: 5px;
 }
 nav {
@@ -140,8 +155,8 @@ footer a:hover {
 .card {
     background-color: #fff;
     border: 5px solid #EDBF24;
-    width: 270px;
-    height: 470px;
+    width: 270px; /* ANCHO DE LA CARD*/
+    height: 415px; /*ALTURA DE LA CARD*/
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     border-radius: 20px;
@@ -165,6 +180,8 @@ footer a:hover {
 }
 
 .card p {
+    font-size: 15px;
+    text-align:center;
     color: #333;
 }
 
@@ -173,26 +190,43 @@ footer a:hover {
   
 }
 
+.cart-total {
+    color: white;
+}
+
 .card input,
 .card button {
     margin: 5px 0;
 }
 
+
 .add-to-cart {
-    background-color: #28a745;
-    color: #fff;
+    display: block;
+    position: relative;
+    left: 80px;
+    background-color:#EDBF24;
+    color: black;
     border: none;
+    margin-top: 100px;
     padding: 10px;
     cursor: pointer;
 }
 
 .add-to-cart:hover {
-    background-color: #218838;
+    background-color: red;
+}
+
+
+.cantidad-input {
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    
 }
 
 .cart {
     
-    background-color: black;
+    background-color:#EDBF24;
     padding: 20px;
     margin: 20px;
     border: 1px solid #ddd;
@@ -201,7 +235,7 @@ footer a:hover {
 
 .cart h2 {
     margin-top: 0;
-    color: white;
+    color: black;
 }
 
 .cart ul {
@@ -211,7 +245,8 @@ footer a:hover {
 }
 
 .cart li {
-    color: white;
+    font-size: 13px;
+    color: black;
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
@@ -220,6 +255,7 @@ footer a:hover {
 
 .cart button {
     background-color: #28a745;
+    font-size: 10px;
     color: #fff;
     border: none;
     padding: 10px;
@@ -227,5 +263,67 @@ footer a:hover {
 }
 
 .cart button:hover {
-    background-color: #218838;
+    background-color: red;
+}
+
+/* Estilos para la ventana modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+/* Estilos para la ventana modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Contenido de la ventana modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+    text-align: center; /* Centrar contenido */
+}
+
+/* Imagen dentro de la ventana modal */
+.modal-content img {
+    width: 100%; /* Ancho de la imagen */
+    max-width: 1000px; /* Ancho máximo de la imagen */
+    height: auto; /* Mantener proporción de la imagen */
+    margin: 0 auto; /* Centrar imagen horizontalmente */
+}
+
+/* El botón de cerrar (X) */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
 }
