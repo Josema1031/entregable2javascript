@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Combo para dos</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,7 +16,7 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="producto.html">Productos</a>
                     <ul class="submenu">
-                        <li><a href="Linea-Smash.html">Linea Smash</a></li>
+                        <li><a href="linea-smashh.html">Linea Smash</a></li>
                         <li><a href="lLinea-veggie.html">Linea Veggie</a></li>
                         
                         <li><a href="para-compartir.html">Para compartir</a></li>
@@ -28,7 +29,8 @@
                         <li><a href="#">Marvel del Dia</a></li>
                     </ul>
                 <li><a href="#">Lanzamiento</a></li>
-                li><a href="#hacercompra">Carrito</a></li>
+                <i class="bx bx-shopping-bag " id="cart-icon"></i>
+
 
             </ul>
         </nav>
@@ -80,6 +82,15 @@
             <button class="add-to-cart" data-producto-id="21">Añadir al carrito</button>
         </div>
 
+    </section>
+    <section class="cart">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: $0</p>
+        <button id="hacercompra">Comprar</button>
+        <button id="cancel">Cancelar la compra</button>
+        <button id="reclamo-pedido">Reclamo</button>
+        <i class="bx bx-x" id="cerrar"></i>
     </section>
 
     

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>MARVEL</title>
     <link rel="stylesheet" href="style.css">
 
@@ -11,7 +12,8 @@
 
 <body>
     <header>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkE5CN0dHatGlAOaVtl6OtDtuPRpLutcFB0w&s" class="logo" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkE5CN0dHatGlAOaVtl6OtDtuPRpLutcFB0w&s"
+            class="logo" alt="">
 
         <nav>
             <ul class="menu">
@@ -31,7 +33,8 @@
                         <li><a href="oferta.html">Marvel del Dia</a></li>
                     </ul>
                 <li><a href="#">Lanzamiento</a></li>
-                <li><a href="#hacercompra">Carrito</a></li>
+
+                <i class="bx bx-shopping-bag " id="cart-icon"></i>
 
             </ul>
         </nav>
@@ -42,7 +45,7 @@
         <!-- Contenido de la ventana modal -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <img src="imagenes/SABADO.txt" alt="Imagen Modal">
+            <img id="modal-image" src="" alt="Imagen Modal">
         </div>
     </div>
 
@@ -54,7 +57,8 @@
         <section class="products">
             <div class="card">
                 <p class="descuento">PRODUCTO</p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlJ9LvEPt9SzxmGvuXgCTUctB7mIGDgY6sfmA74JO0T0utbEutbv0x7nwcqHN4E7MtI9k&usqp=CAU" alt="Producto 1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlJ9LvEPt9SzxmGvuXgCTUctB7mIGDgY6sfmA74JO0T0utbEutbv0x7nwcqHN4E7MtI9k&usqp=CAU"
+                    alt="Producto 1">
                 <h3>NATASHA</h3>
                 <p>Medallon Marvel,extra cheddar,aderezo a eleccion</p>
                 <p class="precio">Precio: $4500</p>
@@ -64,17 +68,19 @@
             </div>
             <div class="card">
                 <p class="descuento">PRODUCTO</p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR47Lrey6gtw6kxeBK-ymiVgAmfwYxMS_dl_Q&s" alt="Producto 1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR47Lrey6gtw6kxeBK-ymiVgAmfwYxMS_dl_Q&s"
+                    alt="Producto 1">
                 <h3>PETER PARKER</h3>
                 <p>Medallon Marvel, Cheddar,Cebolla,Ketchup</p>
                 <p class="precio">Precio: $4600</p>
                 <label for="cantidad2">Cantidad:</label>
                 <input type="number" class="cantidad-input" id="cantidad2" name="cantidad2" min="1" value="1">
                 <button class="add-to-cart" data-producto-id="2">Añadir al carrito</button>
-            </div>        
+            </div>
             <div class="card">
                 <p class="descuento">PRODUCTO</p>
-                <img src="https://media.0221.com.ar/adjuntos/357/migration/0221/092023/1694097396683.jpg" alt="Producto 2">
+                <img src="https://media.0221.com.ar/adjuntos/357/migration/0221/092023/1694097396683.jpg"
+                    alt="Producto 2">
                 <h3>SCOTT</h3>
                 <p>Medallon Marvel,Panceta, extra de Muzzarella</p>
                 <p class="precio">Precio: $4600</p>
@@ -84,7 +90,8 @@
             </div>
             <div class="card">
                 <p class="descuento">PRODUCTO</p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlJ9LvEPt9SzxmGvuXgCTUctB7mIGDgY6sfmA74JO0T0utbEutbv0x7nwcqHN4E7MtI9k&usqp=CAU" alt="Producto 1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlJ9LvEPt9SzxmGvuXgCTUctB7mIGDgY6sfmA74JO0T0utbEutbv0x7nwcqHN4E7MtI9k&usqp=CAU"
+                    alt="Producto 1">
                 <h3>WANDA</h3>
                 <p>Medallon Marvel, Lechuga, tomate,Muzzarella, Cebolla Morada, palta</p>
                 <p class="precio">Precio: $4600</p>
@@ -104,7 +111,8 @@
             </div>
             <div class="card">
                 <p class="descuento">PRODUCTO</p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa6peI3PT9HgePKggxCpmSLpZ32wvuztNuXJFpT5tynOBwPO2_9hWuXtIgL8zXQ2F1OS0&usqp=CAU" alt="Producto 2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa6peI3PT9HgePKggxCpmSLpZ32wvuztNuXJFpT5tynOBwPO2_9hWuXtIgL8zXQ2F1OS0&usqp=CAU"
+                    alt="Producto 2">
                 <h3>VISION</h3>
                 <p>Medallon Marvel, Lechuga, tomate, extra Muzzarella, Panceta, aderezo de Albahaca</p>
                 <p class="precio">Precio: $4900</p>
@@ -114,7 +122,8 @@
             </div>
             <div class="card">
                 <p class="descuento">PRODUCTO</p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg-eZNRmLW4U9TECdRMBhWYSknExVLJqS1jNgfAQQ5Mzhbpnj-ZuEH_JhhIvzLuBgD3d4&usqp=CAU" alt="Producto 2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg-eZNRmLW4U9TECdRMBhWYSknExVLJqS1jNgfAQQ5Mzhbpnj-ZuEH_JhhIvzLuBgD3d4&usqp=CAU"
+                    alt="Producto 2">
                 <h3>DAREDEVIL</h3>
                 <p>Medallon Marvel, salsa criolla, Panceta, cheddar, Ketchup, Muzzarella</p>
                 <p class="precio">Precio: $4900</p>
@@ -124,7 +133,8 @@
             </div>
             <div class="card">
                 <p class="descuento">PRODUCTO</p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-JmXltfl8Z7vkIr7_crBbtYb5KKukTkIhP5mhpkiRSFg2XNVgIdq5bWioFSBcv_cEoBs&usqp=CAU" alt="Producto 2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-JmXltfl8Z7vkIr7_crBbtYb5KKukTkIhP5mhpkiRSFg2XNVgIdq5bWioFSBcv_cEoBs&usqp=CAU"
+                    alt="Producto 2">
                 <h3>CAPITAN AMERICA</h3>
                 <p>Medallon Marvel, Muzzarella, jamon, tomate, huevo frito, Lechuga, mayonesa</p>
                 <p class="precio">Precio: $5400</p>
@@ -134,7 +144,8 @@
             </div>
             <div class="card">
                 <p class="descuento">PRODUCTO</p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbQ6-pHvZgaxE5VmG6urBpvWwt6lwkCash8RA-ENXTVm9uVZ73xSgoXX34WKi6Ig-XDhk&usqp=CAU" alt="Producto 1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbQ6-pHvZgaxE5VmG6urBpvWwt6lwkCash8RA-ENXTVm9uVZ73xSgoXX34WKi6Ig-XDhk&usqp=CAU"
+                    alt="Producto 1">
                 <h3>IRON MAN</h3>
                 <p>Medallon Marvel, Cheddar, BBQ, panceta, Cebolla Caramelizada</p>
                 <p class="precio">Precio: $5400</p>
@@ -154,7 +165,8 @@
             </div>
             <div class="card">
                 <p class="descuento">PRODUCTO</p>
-                <img src="https://media.0221.com.ar/adjuntos/357/migration/0221/092023/1694097396683.jpg" alt="Producto 1">
+                <img src="https://media.0221.com.ar/adjuntos/357/migration/0221/092023/1694097396683.jpg"
+                    alt="Producto 1">
                 <h3>DOCTOR STRANGE</h3>
                 <p> 2 Medallones Marvel, extra cheddar, Panceta, Lechuga, tomate, mayonesa</p>
                 <p class="precio">Precio: $5900</p>
@@ -164,7 +176,8 @@
             </div>
             <div class="card">
                 <p class="descuento">PRODUCTO</p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRxV8CVqx64bjm9oaivBtykngcMMzITGT5Qg&s" alt="Producto 1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRxV8CVqx64bjm9oaivBtykngcMMzITGT5Qg&s"
+                    alt="Producto 1">
                 <h3>CAPITAN MARVEL</h3>
                 <p>2 Medallones Marvel, Lechuga, Cebolla, pepinos, cheddar, salsa Marvel</p>
                 <p class="precio">Precio: $5800</p>
@@ -174,7 +187,8 @@
             </div>
             <div class="card">
                 <p class="descuento">PRODUCTO</p>
-                <img src="https://img.freepik.com/fotos-premium/deliciosa-hamburguesa-doble-ternera-queso-cheddar-bacon-aros-cebolla-fritos_579344-2507.jpg?w=360" alt="Producto 1">
+                <img src="https://img.freepik.com/fotos-premium/deliciosa-hamburguesa-doble-ternera-queso-cheddar-bacon-aros-cebolla-fritos_579344-2507.jpg?w=360"
+                    alt="Producto 1">
                 <h3>THOR 2.0</h3>
                 <p>2 Medallones Marvel, doble cheddar, aros de Cebolla, salsa de pimiento</p>
                 <p class="precio">Precio: $5800</p>
@@ -182,11 +196,12 @@
                 <input type="number" class="cantidad-input" id="cantidad13" name="cantidad13" min="1" value="1">
                 <button class="add-to-cart" data-producto-id="13">Añadir al carrito</button>
             </div>
-            
+
 
             <div class="card">
                 <p class="descuento">PRODUCTO</p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdYAKtw5yHDtOjj3E47aN9ce8JKi6birR5CrmXzYkBn4SC-rf5Dr8aSNOUzMTg1WKMZZo&usqp=CAU" alt="Producto 1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdYAKtw5yHDtOjj3E47aN9ce8JKi6birR5CrmXzYkBn4SC-rf5Dr8aSNOUzMTg1WKMZZo&usqp=CAU"
+                    alt="Producto 1">
                 <h3>HULK</h3>
                 <p>2 Medallones Marvel, cheddar, Panceta, BBQ, Cebolla Caramelizada</p>
                 <p class="precio">Precio: $6200</p>
@@ -196,7 +211,8 @@
             </div>
             <div class="card">
                 <p class="descuento">PRODUCTO</p>
-                <img src="https://static.nestorcarvallo.com/charliesburgers/img/products/gaston_monster_peli_triple.jpg" alt="Producto 1">
+                <img src="https://static.nestorcarvallo.com/charliesburgers/img/products/gaston_monster_peli_triple.jpg"
+                    alt="Producto 1">
                 <h3>WOLVERINE</h3>
                 <p>3 Medallones Marvel, cheddar, Panceta, mayonesa, batata rock</p>
                 <p class="precio">Precio: $7100</p>
@@ -206,7 +222,8 @@
             </div>
             <div class="card">
                 <p class="descuento">PRODUCTO</p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS_PLitsjdeysTfqyj9Cfy6ZfzK3bezhKVAg&s" alt="Producto 1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS_PLitsjdeysTfqyj9Cfy6ZfzK3bezhKVAg&s"
+                    alt="Producto 1">
                 <h3>THANOS</h3>
                 <p>4 Medallones Marvel, cheddar, Panceta, cebolla Caramelizada, salsa especial</p>
                 <p class="precio">Precio: $7800</p>
@@ -216,7 +233,8 @@
             </div>
             <div class="card">
                 <p class="descuento">PRODUCTO</p>
-                <img src="https://d36fw6y2wq3bat.cloudfront.net/recipes/ensalada-de-tomates-y-jamon/900/ensalada-de-tomates-y-jamon_version_1670410154.jpg" alt="Producto 1">
+                <img src="https://d36fw6y2wq3bat.cloudfront.net/recipes/ensalada-de-tomates-y-jamon/900/ensalada-de-tomates-y-jamon_version_1670410154.jpg"
+                    alt="Producto 1">
                 <h3>ENSALADA KANG</h3>
                 <p> tomate cherry, cebolla, salsa Kank, Lechuga, choclo, pollo, jamon, queso, huevo</p>
                 <p class="precio">Precio: $4000</p>
@@ -224,22 +242,22 @@
                 <input type="number" class="cantidad-input" id="cantidad17" name="cantidad17" min="1" value="1">
                 <button class="add-to-cart" data-producto-id="17">Añadir al carrito</button>
             </div>
-            
+
         </section>
-        
+
     </main>
 
-    <section class="cart fixed-cart">
+    <section class="cart">
         <h2>Carrito de Compras</h2>
         <ul id="cart-items"></ul>
         <p id="cart-total">Total: $0</p>
         <button id="hacercompra">Comprar</button>
         <button id="cancel">Cancelar la compra</button>
-        <button id="modify">Modificar la compra</button>
         <button id="reclamo-pedido">Reclamo</button>
+        <i class="bx bx-x" id="cerrar"></i>
     </section>
 
-  
+
 
 
 

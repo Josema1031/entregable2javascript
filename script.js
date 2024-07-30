@@ -1,4 +1,20 @@
-document.addEventListener('DOMContentLoaded', function() {
+/* llamar ////abrir y cerrar carrito */
+const cartIcon = document.querySelector("#cart-icon");
+const cart = document.querySelector(".cart");
+const closeCart = document.querySelector("#cerrar");
+
+cartIcon.addEventListener('click', () => {
+    cart.classList.add('active');
+});
+
+closeCart.addEventListener('click', () => {
+    cart.classList.remove('active');
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
     let cart = JSON.parse(localStorage.getItem('cart')) || {};
 
     function updateCart() {
@@ -20,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     `;
                     cartContainer.appendChild(listItem);
                     total += item.precio * item.cantidad;
+
                 }
             }
 
@@ -50,6 +67,8 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     }
+
+
 
     document.querySelectorAll('.add-to-cart').forEach(button => {
         button.addEventListener('click', () => {
@@ -94,17 +113,17 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             mesaje += `\nTotal: $${total}`;
-            
+
             const phoneNumber = '5493415326060'; // Reemplaza con tu número de WhatsApp 
             const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(mesaje)}`;
-            
+
             window.open(whatsappUrl, '_blank');
             cart = {};
             localStorage.removeItem('cart');
             updateCart();
         });
     }
- //BOTON PARA CANCELAR LA COMPRA DE LA BURGER
+    //BOTON PARA CANCELAR LA COMPRA DE LA BURGER
     if (document.getElementById('cancel')) {
         document.getElementById('cancel').addEventListener('click', () => {
             if (confirm('¿Estás seguro de que quieres cancelar la compra?')) {
@@ -115,21 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-//BOTON PARA AUTUALIZAR/MODIFICAR LA COMPRA DE LA BURGER
-    if (document.getElementById('modify')) {
-        document.getElementById('modify').addEventListener('click', () => {
-            document.querySelectorAll('.cantidad-input').forEach(input => {
-                const productoId = input.getAttribute('data-producto-id');
-                const newcantidad = parseInt(input.value, 10);
 
-                if (cart[productoId]) {
-                    cart[productoId].cantidad = newcantidad;
-                }
-            });
-            updateCart();
-            alert('Carrito actualizado.');
-        });
-    }
 
     //BOTON PARA PARA HACER UN RECLAMO DEL PEDIDO A TRAVEZ DE UN MSJ DE WHATSAPP
     if (document.getElementById('reclamo-pedido')) {
@@ -137,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const reclamomesaje = 'Hola, me gustaría hacer un reclamo:\n\n';
             const phoneNumber = '5493415326060'; // Reemplaza con tu número de WhatsApp en formato internacional
             const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(reclamomesaje)}`;
-            
+
             window.open(whatsappUrl, '_blank');
         });
     }
@@ -153,35 +158,68 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Obtener los elementos del DOM
-var modal = document.getElementById("myModal");
-var span = document.getElementsByClassName("close")[0];
+    var modal = document.getElementById("myModal");
+    var span = document.getElementsByClassName("close")[0];
 
-// Abrir la ventana modal automáticamente al cargar la página
-window.onload = function() {
-    modal.style.display = "block";
-}
+    // Abrir la ventana modal automáticamente al cargar la página
+    window.onload = function () {
+        modal.style.display = "block";
+    }
 
-// Cuando el usuario hace clic en la X, cierra la ventana modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// Cuando el usuario hace clic fuera de la ventana modal, cierra la ventana modal
-window.onclick = function(event) {
-    if (event.target == modal) {
+    // Cuando el usuario hace clic en la X, cierra la ventana modal
+    span.onclick = function () {
         modal.style.display = "none";
     }
-}
 
+    // Cuando el usuario hace clic fuera de la ventana modal, cierra la ventana modal
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 
+    // Obtén la ventana modal
+    var modal = document.getElementById("myModal");
 
+    // Obtén la imagen del modal
+    var modalImage = document.getElementById("modal-image");
 
+    // Obtén el botón de cerrar
+    var span = document.getElementsByClassName("close")[0];
 
-    
+    // Función para obtener la imagen correspondiente al día de la semana
+    function getImageForDay() {
+        var day = new Date().getDay(); // Obtén el día de la semana (0 - Domingo, 6 - Sábado)
+        var images = [
+            "imagenes/DOMINGO.jpg",   // Domingo
+            "imagenes/LUNES.jpg",     // Lunes
+            "imagenes/MARTES.jpg",    // Martes
+            "imagenes/MIERCOLES.jpg", // Miércoles
+            "imagenes/JUEVES.jpg",    // Jueves
+            "imagenes/VIERNES.jpg",   // Viernes
+            "imagenes/SABADO.jpg"     // Sábado
+        ];
+        return images[day];
+    }
+
+    // Establece la imagen en el modal
+    modalImage.src = getImageForDay();
+
+    // Cuando el usuario haga clic en el botón de cerrar, cierra el modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // Cuando el usuario haga clic en cualquier parte fuera del modal, cierra el modal
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
 
     updateCart();
 });
-
 
 
 

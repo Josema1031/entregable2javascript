@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Linea Veggie</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,20 +16,21 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="producto.html">Productos</a>
                     <ul class="submenu">
-                        <li><a href="#">Linea Smash</a></li>
+                        <li><a href="linea-smashh.html">Linea Smash</a></li>
                        
-                        <li><a href="">Combo para dos</a></li>
-                        <li><a href="">Para compartir</a></li>
-                        <li><a href="">Papas</a></li>
-                        <li><a href="">Nuestras Burger</a></li>
+                        <li><a href="combo-para-2.html">Combo para dos</a></li>
+                        <li><a href="para-compartir.html">Para compartir</a></li>
+                        <li><a href="papas.html">Papas</a></li>
+                        <li><a href="index.html">Nuestras Burger</a></li>
                     </ul>
                 </li>
-                <li><a href="oferta.html">Ofertas</a>
+                <li><a href="#">Ofertas</a>
                     <ul class="submenu">
-                        <li><a href="#">Marvel del Dia</a></li>
+                        <li><a href="oferta.html">Marvel del Dia</a></li>
                     </ul>
                 <li><a href="#">Lanzamiento</a></li>
-                <li><a href="#hacercompra">Carrito</a></li>
+                <i class="bx bx-shopping-bag " id="cart-icon"></i>
+
 
             </ul>
         </nav>
@@ -191,10 +193,17 @@
         </div>
                 
     </section>
-    
+    <section class="cart">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: $0</p>
+        <button id="hacercompra">Comprar</button>
+        <button id="cancel">Cancelar la compra</button>
+        <button id="reclamo-pedido">Reclamo</button>
+        <i class="bx bx-x" id="cerrar"></i>
+    </section> 
 
     
-
     <a href="https://wa.me/+5493415326060" class="whatsapp-icon" target="_blank">
         <img src="imagenes/descarga icono whatsap.png" alt="WhatsApp">
     </a>
