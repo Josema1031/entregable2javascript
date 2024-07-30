@@ -1,0 +1,50 @@
+/* footer y icono de whatsapp*/
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .whatsapp-icon img {
+    width: 30px; /* Puedes ajustar este valor según sea necesario */
+    height: auto;
+    border-radius: 50%; /* Esto hace que la imagen sea circular */
+  }
+  
+  footer {
+    background-color: #EDBF24;
+    color: #fff;
+    text-align: center;
+    padding: 0px 5px;
+    padding-bottom: 0;
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+footer li {
+    color: black;
+  font-size: 12px;
+    margin: 5px 0;
+    text-align: justify;
+}
+footer a {
+    color: black;
+    text-decoration: none;
+    margin: 0 5px;
+
+}
+footer P {
+  font-size: 1rem;
+  text-align: justify;
+  color: black;
+  font-weight: bolder;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.copy {
+  text-align: center;
+}

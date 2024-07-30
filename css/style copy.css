@@ -13,74 +13,7 @@ h2 {
     text-align: center;
     text-decoration: underline;
 }
-/*MENU Y SUBMENU DE MARVEL */
-header {
-    background-color:#EDBF24;
-    color: #1C1C1A;
-   
-    border-bottom: 2px solid white;
-}
 
-header img {
-    display: flex;
-    position:sticky;
-    margin: auto;
-    
-   margin-bottom: 5px;
-}
-nav {
-    display: flex;
-    justify-content: center;
-}
-
-.menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.menu li {
-    position: relative;
-    margin: 0 5px;
-}
-
-.menu a {
-    padding-top: 10px;
-    color: #1C1C1A;
-    font-size: 1em;
-    text-decoration: none;
-    font-weight: bolder;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-    width: 90px;
-    top: 100%;
-    left: 0;
-    background-color: #EDBF24;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu li:hover .submenu {
-    display: block;
-}
-
-.submenu li {
-    margin: 0;
-}
-
-.submenu a {
-    padding: 5px;
-    display: block;
-    color: black;
-    font-size: 12px;
-    text-align: justify;
-    margin: 1px;
-}
 
 /* footer y icono de whatsapp*/
 .whatsapp-icon {

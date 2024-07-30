@@ -1,0 +1,21 @@
+@import "header.scss";
+@import "footer.scss";
+@import "carrito.scss";
+@import "card.scss";
+@import "ventanaModal.scss";
+
+body {
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* TITULOS H1*/
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}

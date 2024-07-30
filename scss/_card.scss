@@ -1,0 +1,93 @@
+
+
+/*seccion de card*/
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.descuento {
+    background-color: #EDBF24;
+    font-weight: bolder;
+    margin-top: 0;
+    padding-top: 10px;
+    margin-bottom: 0;
+    border-radius: 1px;
+    text-decoration: underline;
+}
+
+.card {
+    background-color: #fff;
+    border: 5px solid #EDBF24;
+    width: 270px; /* ANCHO DE LA CARD*/
+    height: 415px; /*ALTURA DE LA CARD*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 20px;
+    transition: transform 0.10s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card img {
+    
+    width: 100%;
+    height: 40%;
+    max-height: 200px;
+}
+
+.card h3 {
+    margin: 1px;
+    color: black;
+}
+
+.card p {
+    font-size: 15px;
+    text-align:center;
+    color: #333;
+}
+
+.card label{
+    color: black;
+  
+}
+
+.cart-total {
+    color: white;
+}
+
+.card input,
+.card button {
+    margin: 5px 0;
+}
+
+
+.add-to-cart {
+    display: block;
+    position: relative;
+    left: 80px;
+    background-color:#EDBF24;
+    color: black;
+    border: none;
+    margin-top: 100px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: red;
+}
+
+.cantidad-input {
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    
+}
+
