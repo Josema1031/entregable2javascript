@@ -16,7 +16,7 @@
 
 /* Contenido de la ventana modal */
 .modal-content {
-    background-color: #fefefe;
+    background-color:#EDBF24 ;
     margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -27,6 +27,7 @@
 
 /* Imagen dentro de la ventana modal */
 .modal-content img {
+    
     width: 100%; /* Ancho de la imagen */
     max-width: 1000px; /* Ancho máximo de la imagen */
     height: auto; /* Mantener proporción de la imagen */
@@ -35,9 +36,9 @@
 
 /* El botón de cerrar (X) */
 .close {
-    color: #aaa;
+    color: black;
     float: right;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
 }
 

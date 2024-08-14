@@ -1,4 +1,4 @@
-/* llamar ////abrir y cerrar carrito */
+/* llamar /abrir y cerrar carrito */
 const cartIcon = document.querySelector("#cart-icon");
 const cart = document.querySelector(".cart");
 const closeCart = document.querySelector("#cerrar");
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             });
 
-            // Añadir event listeners para los botones de eliminar
+            // Añadir event listeners para el boton de eliminar
             const removeButtons = document.querySelectorAll('.remove-from-cart');
             removeButtons.forEach(button => {
                 button.addEventListener('click', (event) => {
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             mesaje += `\nTotal: $${total}`;
 
-            const phoneNumber = '5493415326060'; // Reemplaza con tu número de WhatsApp 
+            const phoneNumber = '5493415326060'; // Mi número de WhatsApp 
             const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(mesaje)}`;
 
             window.open(whatsappUrl, '_blank');
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (document.getElementById('reclamo-pedido')) {
         document.getElementById('reclamo-pedido').addEventListener('click', () => {
             const reclamomesaje = 'Hola, me gustaría hacer un reclamo:\n\n';
-            const phoneNumber = '5493415326060'; // Reemplaza con tu número de WhatsApp en formato internacional
+            const phoneNumber = '5493415326060'; // Mi número de WhatsApp en formato internacional
             const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(reclamomesaje)}`;
 
             window.open(whatsappUrl, '_blank');
@@ -178,18 +178,18 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Obtén la ventana modal
+    // Obténcion de la ventana modal
     var modal = document.getElementById("myModal");
 
-    // Obtén la imagen del modal
+    // Obténcion de la imagen del modal
     var modalImage = document.getElementById("modal-image");
 
-    // Obtén el botón de cerrar
+    // Obténcion del el botón de cerrar
     var span = document.getElementsByClassName("close")[0];
 
-    // Función para obtener la imagen correspondiente al día de la semana
+    // Función para obtener la imagen correspondiente al día de la semana, para las ofertas del dia a dia
     function getImageForDay() {
-        var day = new Date().getDay(); // Obtén el día de la semana (0 - Domingo, 6 - Sábado)
+        var day = new Date().getDay(); // Obténcion del día de la semana (0 - Domingo, 6 - Sábado)
         var images = [
             "imagenes/DOMINGO.jpg",   // Domingo
             "imagenes/LUNES.jpg",     // Lunes
