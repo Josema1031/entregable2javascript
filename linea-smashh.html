@@ -38,51 +38,9 @@
     <h2>FLAMA</h2>
 
     <!--CARD DESDE 22 HASTA 25-->
-    <section class="products">
-        <div class="card">
-            <p class="descuento">PRODUCTO</p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX9_sep9O7MBKhSxz5pfdf3-idX3zUPLfSh2nKpkYFG3yimRArS8FBS20dhj6xwbXY5JQ&usqp=CAU"
-                alt="Producto 1">
-            <h3>CHIS BURGER </h3>
-            <p>Doble smash burger 180grs, Doble cheddar, salsa a eleccion (mayo, salsa Marvel, Ketchup), en un bollo de pan de papa  </p>
-            <p class="precio">Precio: $4500</p>
-            <label for="cantidad22">Cantidad:</label>
-            <input type="number" class="cantidad-input" id="cantidad22" name="cantidad22" min="1" value="1">
-            <button class="add-to-cart" data-producto-id="22">Añadir al carrito</button>
-        </div>
-        <div class="card">
-            <p class="descuento">PRODUCTO</p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6LjEAOH-dfMZHIw10w9R9beXpRrGViQ5z1A&s"
-                alt="Producto 1">
-            <h3>PERK-FEK-TA</h3>
-            <p>Doble smash burger 180grs, Doble cheddar, Lechuga, tomate,  salsa Marvel, en un bollo de pan de papa  </p>
-            <p class="precio">Precio: $4500</p>
-            <label for="cantidad23">Cantidad:</label>
-            <input type="number" class="cantidad-input" id="cantidad23" name="cantidad23" min="1" value="1">
-            <button class="add-to-cart" data-producto-id="23">Añadir al carrito</button>
-        </div>
-        <div class="card">
-            <p class="descuento">PRODUCTO</p>
-            <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/c9/66/63/pan-doble-de-carne-ultra.jpg" alt="Producto 2">
-            <h3>BIG MARVEL</h3>
-            <p>Doble smash burger 180grs, Doble cheddar, Lechuga, pepinos,  salsa Marvel, en un bollo de pan de papa  </p>
-            <p class="precio">Precio: $4500</p>
-            <label for="cantidad24">Cantidad:</label>
-            <input type="number" class="cantidad-input" id="cantidad24" name="cantidad24" min="1" value="1">
-            <button class="add-to-cart" data-producto-id="24">Añadir al carrito</button>
-        </div>
-        <div class="card">
-            <p class="descuento">PRODUCTO</p>
-            <img src="https://i0.wp.com/charlestoncitypaper.com/wp-content/uploads/2022/05/Smash-Burgers-2.jpg?fit=1200%2C800&ssl=1" alt="Producto 2">
-            <h3>STACKER</h3>
-            <p>Doble smash burger 180grs, Doble cheddar, Panceta,  salsa STACKER, en un bollo de pan de papa  </p>
-            <p class="precio">Precio: $5300</p>
-            <label for="cantidad25">Cantidad:</label>
-            <input type="number" class="cantidad-input" id="cantidad25" name="cantidad25" min="1" value="1">
-            <button class="add-to-cart" data-producto-id="25">Añadir al carrito</button>
-        </div>
-
-    </section>
+     <!--LISTA DE HAMBURGUESA CON ARCHIVO JSON-->
+     <div id="product-container-section2"></div>
+    
     <section class="cart">
         <h2>Carrito de Compras</h2>
         <ul id="cart-items"></ul>
@@ -116,7 +74,7 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="app.js"></script>
     
 </body>
 </html>

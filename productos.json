@@ -1,0 +1,381 @@
+[
+  
+  
+    {
+      "id": 1,
+      "nombre": "NATASHA",
+      "descripcion": "Medallon Marvel, extra cheddar, aderezo a elección",
+      "precio": 4500,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlJ9LvEPt9SzxmGvuXgCTUctB7mIGDgY6sfmA74JO0T0utbEutbv0x7nwcqHN4E7MtI9k&usqp=CAU"
+     
+    },
+    {
+      "id": 2,
+      "nombre": "PETER PARKER",
+      "descripcion": "Medallon Marvel, Cheddar, Cebolla, Ketchup",
+      "precio": 4600,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR47Lrey6gtw6kxeBK-ymiVgAmfwYxMS_dl_Q&s"
+    },
+    {
+      "id": 3,
+      "nombre": "SCOTT",
+      "descripcion": "Medallon Marvel, Panceta, extra de Muzzarella",
+      "precio": 4600,
+      "imagen": "https://media.0221.com.ar/adjuntos/357/migration/0221/092023/1694097396683.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "WANDA",
+      "descripcion": "Medallon Marvel, Lechuga, tomate, Muzzarella, Cebolla Morada, palta",
+      "precio": 4600,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlJ9LvEPt9SzxmGvuXgCTUctB7mIGDgY6sfmA74JO0T0utbEutbv0x7nwcqHN4E7MtI9k&usqp=CAU"
+    },
+    {
+      "id": 5,
+      "nombre": "BLACK PANTHER",
+      "descripcion": "Medallon Marvel, Cebolla Caramelizada, Roquefort, Panceta, mayo, Honey Mustard",
+      "precio": 4800,
+      "imagen": "https://www.toque.com.ar/sistema/uploads/1600/articulos/683934490922.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "VISION",
+      "descripcion": "Medallon Marvel, Lechuga, tomate, extra Muzzarella, Panceta, aderezo de Albahaca",
+      "precio": 4900,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa6peI3PT9HgePKggxCpmSLpZ32wvuztNuXJFpT5tynOBwPO2_9hWuXtIgL8zXQ2F1OS0&usqp=CAU"
+    },
+    {
+      "id": 7,
+      "nombre": "DAREDEVIL",
+      "descripcion": "Medallon Marvel, salsa criolla, Panceta, cheddar, Ketchup, Muzzarella",
+      "precio": 4900,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg-eZNRmLW4U9TECdRMBhWYSknExVLJqS1jNgfAQQ5Mzhbpnj-ZuEH_JhhIvzLuBgD3d4&usqp=CAU"
+    },
+    {
+      "id": 8,
+      "nombre": "CAPITAN AMERICA",
+      "descripcion": "Medallon Marvel, Muzzarella, jamon, tomate, huevo frito, Lechuga, mayonesa",
+      "precio": 5400,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-JmXltfl8Z7vkIr7_crBbtYb5KKukTkIhP5mhpkiRSFg2XNVgIdq5bWioFSBcv_cEoBs&usqp=CAU"
+    },
+    {
+      "id": 9,
+      "nombre": "IRON MAN",
+      "descripcion": "Medallon Marvel, Cheddar, BBQ, panceta, Cebolla Caramelizada",
+      "precio": 5400,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbQ6-pHvZgaxE5VmG6urBpvWwt6lwkCash8RA-ENXTVm9uVZ73xSgoXX34WKi6Ig-XDhk&usqp=CAU"
+    },
+    {
+      "id": 10,
+      "nombre": "LOKI",
+      "descripcion": "Medallon Marvel, Panceta, Lechuga, provolone, salsa picante, mayonesa, Cebolla Caramelizada",
+      "precio": 5600,
+      "imagen": "https://meatpacking.com.ar/uploads/productos/3/img_1.png"
+    },
+    {
+      "id": 11,
+      "nombre": "DOCTOR STRANGE",
+      "descripcion": "2 Medallones Marvel, extra cheddar, Panceta, Lechuga, tomate, mayonesa",
+      "precio": 5900,
+      "imagen": "https://media.0221.com.ar/adjuntos/357/migration/0221/092023/1694097396683.jpg"
+    },
+    {
+      "id": 12,
+      "nombre": "CAPITAN MARVEL",
+      "descripcion": "2 Medallones Marvel, Lechuga, Cebolla, pepinos, cheddar, salsa Marvel",
+      "precio": 5800,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRxV8CVqx64bjm9oaivBtykngcMMzITGT5Qg&s"
+    },
+    {
+      "id": 13,
+      "nombre": "THOR 2.0",
+      "descripcion": "2 Medallones Marvel, doble cheddar, aros de Cebolla, salsa de pimiento",
+      "precio": 5800,
+      "imagen": "https://img.freepik.com/fotos-premium/deliciosa-hamburguesa-doble-ternera-queso-cheddar-bacon-aros-cebolla-fritos_579344-2507.jpg?w=360"
+    },
+    {
+      "id": 14,
+      "nombre": "HULK",
+      "descripcion": "2 Medallones Marvel, cheddar, Panceta, BBQ, Cebolla Caramelizada",
+      "precio": 6200,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdYAKtw5yHDtOjj3E47aN9ce8JKi6birR5CrmXzYkBn4SC-rf5Dr8aSNOUzMTg1WKMZZo&usqp=CAU"
+    },
+    {
+      "id": 15,
+      "nombre": "WOLVERINE",
+      "descripcion": "3 Medallones Marvel, cheddar, Panceta, mayonesa, batata rock",
+      "precio": 7100,
+      "imagen": "https://static.nestorcarvallo.com/charliesburgers/img/products/gaston_monster_peli_triple.jpg"
+    },
+    {
+      "id": 16,
+      "nombre": "THANOS",
+      "descripcion": "4 Medallones Marvel, cheddar, Panceta, cebolla Caramelizada, salsa especial",
+      "precio": 7800,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS_PLitsjdeysTfqyj9Cfy6ZfzK3bezhKVAg&s"
+    },
+    {
+      "id": 17,
+      "nombre": "ENSALADA KANG",
+      "descripcion": "Tomate cherry, cebolla, salsa Kank, Lechuga, choclo, pollo, jamon, queso, huevo",
+      "precio": 4000,
+      "imagen": "https://d36fw6y2wq3bat.cloudfront.net/recipes/ensalada-de-tomates-y-jamon/900/ensalada-de-tomates-y-jamon_version_1670410154.jpg"
+    }, 
+    {
+      "id": "18",
+      "nombre": "2 PETER PARKER",
+      "descripcion": "Medallon Marvel, Cheddar, Cebolla, Ketchup",
+      "precio": 12500,
+      "imagen": "https://www.shutterstock.com/shutterstock/photos/2151525715/display_1500/stock-photo-a-closeup-shot-of-two-bacon-burger-sandwiches-with-fries-lettuce-melted-cheese-sweet-onions-and-2151525715.jpg"
+  },
+  {
+      "id": "19",
+      "nombre": "2 CAPITAN AMERICA",
+      "descripcion": "Medallon Marvel, Muzzarella, jamon, tomate, huevo frito, Lechuga, mayonesa",
+      "precio": 14100,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-JmXltfl8Z7vkIr7_crBbtYb5KKukTkIhP5mhpkiRSFg2XNVgIdq5bWioFSBcv_cEoBs&usqp=CAU"
+  },
+  {
+      "id": "20",
+      "nombre": "2 IRON MAN",
+      "descripcion": "Medallon Marvel, Cheddar, BBQ, panceta, Cebolla Caramelizada",
+      "precio": 14100,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbQ6-pHvZgaxE5VmG6urBpvWwt6lwkCash8RA-ENXTVm9uVZ73xSgoXX34WKi6Ig-XDhk&usqp=CAU"
+  },
+  {
+      "id": "21",
+      "nombre": "2 HULK",
+      "descripcion": "2 Medallones Marvel, cheddar, Panceta, BBQ, Cebolla Caramelizada",
+      "precio": 15700,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdYAKtw5yHDtOjj3E47aN9ce8JKi6birR5CrmXzYkBn4SC-rf5Dr8aSNOUzMTg1WKMZZo&usqp=CAU"
+  },
+    {
+      "id": "22",
+      "nombre": "CHIS BURGER",
+      "descripcion": "Doble smash burger 180grs, Doble cheddar, salsa a eleccion (mayo, salsa Marvel, Ketchup), en un bollo de pan de papa",
+      "precio": 4500,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX9_sep9O7MBKhSxz5pfdf3-idX3zUPLfSh2nKpkYFG3yimRArS8FBS20dhj6xwbXY5JQ&usqp=CAU"
+  },
+  {
+      "id": "23",
+      "nombre": "PERK-FEK-TA",
+      "descripcion": "Doble smash burger 180grs, Doble cheddar, Lechuga, tomate, salsa Marvel, en un bollo de pan de papa",
+      "precio": 4500,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6LjEAOH-dfMZHIw10w9R9beXpRrGViQ5z1A&s"
+  },
+  {
+      "id": "24",
+      "nombre": "BIG MARVEL",
+      "descripcion": "Doble smash burger 180grs, Doble cheddar, Lechuga, pepinos, salsa Marvel, en un bollo de pan de papa",
+      "precio": 4500,
+      "imagen": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/c9/66/63/pan-doble-de-carne-ultra.jpg"
+  },
+  {
+      "id": "25",
+      "nombre": "STACKER",
+      "descripcion": "Doble smash burger 180grs, Doble cheddar, Panceta, salsa STACKER, en un bollo de pan de papa",
+      "precio": 5300,
+      "imagen": "https://i0.wp.com/charlestoncitypaper.com/wp-content/uploads/2022/05/Smash-Burgers-2.jpg?fit=1200%2C800&ssl=1"
+  }, 
+    {
+        "id": "26",
+        "nombre": "NATASHA VEGGIE",
+        "descripcion": "Medallon Veggie, extra cheddar, aderezo a elección",
+        "precio": 3000,
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlJ9LvEPt9SzxmGvuXgCTUctB7mIGDgY6sfmA74JO0T0utbEutbv0x7nwcqHN4E7MtI9k&usqp=CAU"
+    },
+    {
+        "id": "27",
+        "nombre": "VEGAN VALKIRYA",
+        "descripcion": "Medallon Veggie, Lechuga, tomate, Cebolla Morada, pepinos, mayonesa",
+        "precio": 3000,
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlJ9LvEPt9SzxmGvuXgCTUctB7mIGDgY6sfmA74JO0T0utbEutbv0x7nwcqHN4E7MtI9k&usqp=CAU"
+    },
+    {
+        "id": "28",
+        "nombre": "PETER PARKER VEGGIE",
+        "descripcion": "Medallon Veggie, Cheddar, Cebolla, Ketchup",
+        "precio": 3000,
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR47Lrey6gtw6kxeBK-ymiVgAmfwYxMS_dl_Q&s"
+    },
+    {
+        "id": "29",
+        "nombre": "SCOTT VEGGIE",
+        "descripcion": "Medallon Veggie, Panceta, extra de Muzzarella",
+        "precio": 3000,
+        "imagen": "https://media.0221.com.ar/adjuntos/357/migration/0221/092023/1694097396683.jpg"
+    },
+    {
+        "id": "30",
+        "nombre": "WANDA VEGGIE",
+        "descripcion": "Medallon Veggie, Lechuga, tomate, Muzzarella, Cebolla Morada, palta",
+        "precio": 3000,
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlJ9LvEPt9SzxmGvuXgCTUctB7mIGDgY6sfmA74JO0T0utbEutbv0x7nwcqHN4E7MtI9k&usqp=CAU"
+    },
+    {
+        "id": "31",
+        "nombre": "BLACK PANTHER VEGGIE",
+        "descripcion": "Medallon Veggie, Cebolla Caramelizada, Roquefort, Panceta, mayo, Honey Mustard",
+        "precio": 3000,
+        "imagen": "https://www.toque.com.ar/sistema/uploads/1600/articulos/683934490922.jpg"
+    },
+    {
+        "id": "32",
+        "nombre": "VISION VEGGIE",
+        "descripcion": "Medallon Veggie, Lechuga, tomate, extra Muzzarella, Panceta, aderezo de Albahaca",
+        "precio": 4900,
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa6peI3PT9HgePKggxCpmSLpZ32wvuztNuXJFpT5tynOBwPO2_9hWuXtIgL8zXQ2F1OS0&usqp=CAU"
+    },
+    {
+        "id": "33",
+        "nombre": "DAREDEVIL VEGGIE",
+        "descripcion": "Medallon Veggie, salsa criolla, Panceta, cheddar, Ketchup, Muzzarella",
+        "precio": 4900,
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg-eZNRmLW4U9TECdRMBhWYSknExVLJqS1jNgfAQQ5Mzhbpnj-ZuEH_JhhIvzLuBgD3d4&usqp=CAU"
+    },
+    {
+        "id": "34",
+        "nombre": "CAPITAN AMERICA VEGGIE",
+        "descripcion": "Medallon Veggie, Muzzarella, jamon, tomate, huevo frito, Lechuga, mayonesa",
+        "precio": 3000,
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-JmXltfl8Z7vkIr7_crBbtYb5KKukTkIhP5mhpkiRSFg2XNVgIdq5bWioFSBcv_cEoBs&usqp=CAU"
+    },
+    {
+        "id": "35",
+        "nombre": "IRON MAN VEGGIE",
+        "descripcion": "Medallon Veggie, Cheddar, BBQ, panceta, Cebolla Caramelizada",
+        "precio": 3000,
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbQ6-pHvZgaxE5VmG6urBpvWwt6lwkCash8RA-ENXTVm9uVZ73xSgoXX34WKi6Ig-XDhk&usqp=CAU"
+    },
+    {
+        "id": "36",
+        "nombre": "LOKI VEGGIE",
+        "descripcion": "Medallon Veggie, Panceta, Lechuga, provolone, salsa picante, mayonesa, Cebolla Caramelizada",
+        "precio": 3000,
+        "imagen": "https://meatpacking.com.ar/uploads/productos/3/img_1.png"
+    },
+    {
+        "id": "37",
+        "nombre": "DOCTOR STRANGE VEGGIE",
+        "descripcion": "2 Medallones Veggie, extra cheddar, Panceta, Lechuga, tomate, mayonesa",
+        "precio": 3000,
+        "imagen": "https://media.0221.com.ar/adjuntos/357/migration/0221/092023/1694097396683.jpg"
+    },
+    {
+        "id": "38",
+        "nombre": "CAPITAN MARVEL VEGGIE",
+        "descripcion": "2 Medallones Veggie, Lechuga, Cebolla, pepinos, cheddar, salsa Marvel",
+        "precio": 5800,
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRxV8CVqx64bjm9oaivBtykngcMMzITGT5Qg&s"
+    },
+    {
+        "id": "39",
+        "nombre": "THOR 2.0 VEGGIE",
+        "descripcion": "Medallones Veggie, doble cheddar, aros de Cebolla, salsa de pimiento",
+        "precio": 3000,
+        "imagen": "https://img.freepik.com/fotos-premium/deliciosa-hamburguesa-doble-ternera-queso-cheddar-bacon-aros-cebolla-fritos_579344-2507.jpg?w=360"
+    },
+    {
+        "id": "40",
+        "nombre": "HULK VEGGIE",
+        "descripcion": "Medallones Veggie, cheddar, Panceta, BBQ, Cebolla Caramelizada",
+        "precio": 3000,
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdYAKtw5yHDtOjj3E47aN9ce8JKi6birR5CrmXzYkBn4SC-rf5Dr8aSNOUzMTg1WKMZZo&usqp=CAU"
+    },
+    {
+      "id": "41",
+      "nombre": "PAPAS BASTON",
+      "descripcion": "Papas Grandes Baston",
+      "precio": 3300,
+      "imagen": "https://cdn.pedix.app/FMsBm2c5Gesuo93Jn00b/products/1696015496479.png?size=250x250"
+  },
+  {
+      "id": "42",
+      "nombre": "PAPAS CON CHEDDAR",
+      "descripcion": "Papas Grandes con Cheddar",
+      "precio": 3700,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5aangrBUcjIuc1koA81Nk374jCrNFslGHuQ&ss"
+  },
+  {
+      "id": "43",
+      "nombre": "PAPAS COMPLETAS",
+      "descripcion": "Papas Grandes, cheddar, Panceta, Verdeo",
+      "precio": 5100,
+      "imagen": "https://locosxlaparrilla.com/wp-content/uploads/2015/02/Receta-recetas-locos-x-la-parrilla-locosxlaparrilla-receta-papas-fritas-cheddar-verdeo-panceta-papas-fritas-cheddar-verde-640x477.jpg"
+  },
+    {
+      "id": "44",
+      "nombre": "PAPAS BASTON",
+      "descripcion": "Papas chicas Baston",
+      "precio": 2700,
+      "imagen": "https://cdn.pedix.app/FMsBm2c5Gesuo93Jn00b/products/1696015496479.png?size=250x250"
+  },
+  {
+      "id": "45",
+      "nombre": "PAPAS CON CHEDDAR",
+      "descripcion": "Papas chicas con Cheddar",
+      "precio": 2900,
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5aangrBUcjIuc1koA81Nk374jCrNFslGHuQ&s"
+  },
+  {
+      "id": "46",
+      "nombre": "PAPAS COMPLETAS ",
+      "descripcion": "Papas, cheddar, Panceta, Verdeo",
+      "precio": 4500,
+      "imagen": "https://locosxlaparrilla.com/wp-content/uploads/2015/02/Receta-recetas-locos-x-la-parrilla-locosxlaparrilla-receta-papas-fritas-cheddar-verdeo-panceta-papas-fritas-cheddar-verde-640x477.jpg"
+  },
+  
+    {
+        "id": "47",
+        "nombre": "MARVEL DEL DIA 'CAPITAN AMERICA'",
+        "descripcion": "CAPITAN AMERICA + PAPAS CHICAS",
+        "precio": 6000,
+        "imagen": "imagenes/LUNES.jpg"
+    },
+    {
+        "id": "48",
+        "nombre": "MARVEL DEL DIA 'PETER PARKER'",
+        "descripcion": "PETER PARKER + Papas chicas",
+        "precio": 6000,
+        "imagen": "imagenes/MARTES.jpg"
+    },
+    {
+        "id": "49",
+        "nombre": "MARVEL DEL DIA 'IRON MAN'",
+        "descripcion": "IRON MAN + Papas chicas",
+        "precio": 6000,
+        "imagen": "imagenes/MIERCOLES.jpg"
+    },
+    {
+        "id": "50",
+        "nombre": "MARVEL DEL DIA 'STACKER'",
+        "descripcion": "STACKER + Papas chicas",
+        "precio": 6000,
+        "imagen": "imagenes/JUEVES.jpg"
+    },
+    {
+        "id": "51",
+        "nombre": "MARVEL DEL DIA 'LOKI'",
+        "descripcion": "LOKI + Papas chicas",
+        "precio": 6000,
+        "imagen": "imagenes/VIERNES.jpg"
+    },
+    {
+        "id": "52",
+        "nombre": "MARVEL DEL DIA 'BLACK PANTHER'",
+        "descripcion": "BLACK PANTHER + Papas chicas",
+        "precio": 6000,
+        "imagen": "imagenes/SABADO.jpg"
+    },
+    {
+        "id": "53",
+        "nombre": "MARVEL DEL DIA 'CHIS BURGER'",
+        "descripcion": "CHIS BURGER + Papas chicas",
+        "precio": 6000,
+        "imagen": "imagenes/DOMINGO.jpg"
+    }
+]
+
+
+
+  
