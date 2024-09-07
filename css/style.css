@@ -126,8 +126,6 @@ footer a:hover {
 .cart {
   background-color: #EDBF24;
   position: fixed;
-  max-width: 100%; /* Evita que el contenedor se expanda más allá del ancho disponible */
-  overflow-x: auto; /* Habilita el desplazamiento horizontal si es necesario */
   top: 0;
   right: 0;
   right: -100%;

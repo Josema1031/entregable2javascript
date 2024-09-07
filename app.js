@@ -68,26 +68,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function displayProducts(products) {
         // Determinar el contenedor y el rango de IDs basado en el archivo HTML actual
-        const contenedor = document.getElementById('product-container-section1') || document.getElementById('product-container-section2')|| document.getElementById('product-container-section3') || document.getElementById('product-container-section4')|| document.getElementById('product-container-section5')|| document.getElementById('product-container-section6');
+        const contenedor = document.getElementById('product-container-section1') || 
+                            document.getElementById('product-container-section2') || 
+                            document.getElementById('product-container-section3') || 
+                            document.getElementById('product-container-section4') || 
+                            document.getElementById('product-container-section5') || 
+                            document.getElementById('product-container-section6');
 
         let rangoIds;
-        if (contenedor.id === 'product-container-section1') {
-            rangoIds = { min: 1, max: 17 };
-        } else if (contenedor.id === 'product-container-section2') {
-            rangoIds = { min: 22, max: 25 };
-        } else if (contenedor.id === 'product-container-section3') {
-            rangoIds = { min: 26, max: 40 };
-        } else if (contenedor.id === 'product-container-section4') {
-            rangoIds = { min: 18, max: 21 };
-        } else if (contenedor.id === 'product-container-section5') {
-            rangoIds = { min: 41, max: 46 };
-            } else if (contenedor.id === 'product-container-section6') {
-            rangoIds = { min: 47, max: 53 };
-       
-
-        } else {
-            console.error('No se ha encontrado un contenedor válido.');
-            return;
+        switch (contenedor.id) {
+            case 'product-container-section1':
+                rangoIds = { min: 1, max: 17 };
+                break;
+            case 'product-container-section2':
+                rangoIds = { min: 22, max: 25 };
+                break;
+            case 'product-container-section3':
+                rangoIds = { min: 26, max: 40 };
+                break;
+            case 'product-container-section4':
+                rangoIds = { min: 18, max: 21 };
+                break;
+            case 'product-container-section5':
+                rangoIds = { min: 41, max: 46 };
+                break;
+            case 'product-container-section6':
+                rangoIds = { min: 47, max: 53 };
+                break;
+            default:
+                console.error('No se ha encontrado un contenedor válido.');
+                return;
         }
 
         // Filtrar los productos según el rango de IDs
@@ -187,8 +197,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    var modal = document.getElementById("myModal");
-    var span = document.getElementsByClassName("close")[0];
+    const modal = document.getElementById("myModal");
+    const span = document.getElementsByClassName("close")[0];
 
     window.onload = function () {
         modal.style.display = "block";
@@ -199,16 +209,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     window.onclick = function (event) {
-        if (event.target == modal) {
+        if (event.target === modal) {
             modal.style.display = "none";
         }
     }
 
-    var modalImage = document.getElementById("modal-image");
+    const modalImage = document.getElementById("modal-image");
 
     function getImageForDay() {
-        var day = new Date().getDay();
-        var images = [
+        const day = new Date().getDay();
+        const images = [
             "imagenes/DOMINGO.jpg",
             "imagenes/LUNES.jpg",
             "imagenes/MARTES.jpg",
@@ -223,11 +233,11 @@ document.addEventListener('DOMContentLoaded', () => {
     modalImage.src = getImageForDay();
 
     function addToCart(productId, quantity) {
-        let cartItems = document.getElementById('cart-items');
-        let cartCount = document.getElementById('cart-count');
+        const cartItems = document.getElementById('cart-items');
+        const cartCount = document.getElementById('cart-count');
     
         // Lógica para añadir el producto al carrito (ajusta esto según tu implementación)
-        let listItem = document.createElement('li');
+        const listItem = document.createElement('li');
         listItem.textContent = `Producto ID: ${productId}, Cantidad: ${quantity}`;
         cartItems.appendChild(listItem);
     
@@ -240,10 +250,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Ejemplo de uso
     document.querySelectorAll('.add-to-cart').forEach(button => {
         button.addEventListener('click', () => {
-            let productId = button.getAttribute('data-producto-id');
-            let quantity = parseInt(button.previousElementSibling.value);
+            const productId = button.getAttribute('data-producto-id');
+            const quantity = parseInt(button.previousElementSibling.value);
             addToCart(productId, quantity);
         });
     });
-    
 });
